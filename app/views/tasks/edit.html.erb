@@ -1,0 +1,15 @@
+<p></p>
+<p></p>
+
+<h2>Edit Task</h2>
+
+<%= simple_form_for(@task) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.input :completed %>
+  <%= f.submit %>
+<% end %>
+
+<p></p>
+
+<%= link_to "Back to the list", "../tasks" %>

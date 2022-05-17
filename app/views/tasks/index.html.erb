@@ -1,0 +1,10 @@
+<p></p>
+<p></p>
+
+<h1>ToDoList you lazy ass bitch</h1>
+
+<% @tasks.each do |task| %>
+  <li><%= link_to task.title, task_path(task) %></li>
+<% end %>
+<p></p>
+<%= link_to "Add a task", "tasks/new" %>
